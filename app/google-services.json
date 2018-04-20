@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "26219776658",
+    "firebase_url": "https://ms-spares-classi-1524131093110.firebaseio.com",
+    "project_id": "ms-spares-classi-1524131093110",
+    "storage_bucket": "ms-spares-classi-1524131093110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26219776658:android:d7cf1af5051621fd",
+        "android_client_info": {
+          "package_name": "com.webprobity.ms_spares_classified"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26219776658-p2uv80selcrec63r116so7skojva190c.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "26219776658-ideffbivv3qacohgeueus8if10oik9i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx41ujeb_RJJcxHRU-HQ-c_VAI09ULxrw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26219776658-p2uv80selcrec63r116so7skojva190c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
