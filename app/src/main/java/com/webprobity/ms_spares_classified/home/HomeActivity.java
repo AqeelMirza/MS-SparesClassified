@@ -440,6 +440,7 @@ public class HomeActivity extends AppCompatActivity
         }
         if (id == R.id.nav_msspares_link) {
             // replaceFragment(new BlogFragment(), "BlogFragment");
+            //Update package name
             openApp(this, "itp.com.magikdigi");
         }
         if (id == R.id.search) {
