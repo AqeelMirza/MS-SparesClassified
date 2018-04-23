@@ -19,6 +19,14 @@
           "client_type": 3
         },
         {
+          "client_id": "26219776658-8kllbjrh8ajqk0er1fcm8rfc0t3s3b3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webprobity.ms_spares_classified",
+            "certificate_hash": "eeb5a128a502fca7c252009a46b60e6969befad6"
+          }
+        },
+        {
           "client_id": "26219776658-ideffbivv3qacohgeueus8if10oik9i8.apps.googleusercontent.com",
           "client_type": 3
         }

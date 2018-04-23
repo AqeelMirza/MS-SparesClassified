@@ -35,7 +35,8 @@ public class UrlController {
     private static String Purchase_code = "e7c217b4-5ac8-45e9-90be-6c4f5678868e";
     //e7c217b4-5ac8-45e9-90be-6c4f5678868e
     private static String Custom_Security = "spares_code";
-    private static String IP_ADDRESS = "http://tr.webprobity.com/";
+   // private static String IP_ADDRESS = "http://tr.webprobity.com/";
+    private static String IP_ADDRESS = "http://sell.ms-spares.in/";
     private static String Base_URL  =    IP_ADDRESS+ "wp-json/adforest/v1/";
 
     private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder();

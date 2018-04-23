@@ -2,6 +2,7 @@ package com.webprobity.ms_spares_classified.home;
 
 import android.Manifest;
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -437,6 +438,10 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_blog) {
             replaceFragment(new BlogFragment(), "BlogFragment");
         }
+        if (id == R.id.nav_msspares_link) {
+            // replaceFragment(new BlogFragment(), "BlogFragment");
+            openApp(this, "itp.com.magikdigi");
+        }
         if (id == R.id.search) {
 
             Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
@@ -534,6 +539,39 @@ public class HomeActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Open another app.
+     *
+     * @param context     current Context, like Activity, App, or Service
+     * @param packageName the full package name of the app to open
+     * @return true if likely successful, false if unsuccessful
+     */
+    public void openApp(Context context, String packageName) {
+       /* PackageManager manager = context.getPackageManager();
+        try {
+            Intent i = manager.getLaunchIntentForPackage(packageName);
+            if (i == null) {
+                return false;
+                //throw new ActivityNotFoundException();
+            }
+            i.addCategory(Intent.CATEGORY_LAUNCHER);
+            context.startActivity(i);
+            return true;
+        } catch (ActivityNotFoundException e) {
+            return false;
+        }
+*/
+
+        Intent intent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+        if (intent == null) {
+            // Bring user to the market or let them choose an app?
+            intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("market://details?id=" + packageName));
+        }
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
+
     public void replaceFragment(Fragment someFragment, String tag) {
 
         FragmentManager fm = getSupportFragmentManager();
@@ -615,7 +653,7 @@ public class HomeActivity extends AppCompatActivity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Log.d("AdsType", settingsMain.getAdsType());
+                Log.i("AdsType", settingsMain.getAdsType());
                 if (settingsMain.getAdsType().equals("interstital")) {
                     adforest_InterstitalAds();
                 } else {

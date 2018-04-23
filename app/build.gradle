@@ -7,9 +7,9 @@ android {
         applicationId "com.webprobity.ms_spares_classified"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 2
+        versionCode 1
         multiDexEnabled true
-        versionName "1.5.0"
+        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

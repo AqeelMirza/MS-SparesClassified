@@ -38,9 +38,9 @@
             android:icon="@drawable/ic_feature_black_24dp"
             android:title="" />
         <item
-            android:id="@+id/favAds"
-            android:icon="@drawable/ic_favorite_border"
-            android:title="" />
+        android:id="@+id/favAds"
+        android:icon="@drawable/ic_favorite_border"
+        android:title="" />
     </group>
     <group
         android:id="@+id/pages"
@@ -62,7 +62,13 @@
                     android:id="@+id/nav_blog"
                     android:checkableBehavior="single"
                     android:icon="@drawable/ic_blogger_icon"
-                    android:title="" />
+                    android:title=""
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_msspares_link"
+                    android:checkableBehavior="single"
+                    android:icon="@drawable/motor_cycle"
+                    android:title="New Spare Parts" />
                 <item
                     android:id="@+id/nav_log_out"
                     android:checkableBehavior="single"
