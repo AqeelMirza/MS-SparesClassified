@@ -441,7 +441,7 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.nav_msspares_link) {
             // replaceFragment(new BlogFragment(), "BlogFragment");
             //Update package name
-            openApp(this, "itp.com.magikdigi");
+            openApp(this, "in.msSpares.myApp");
         }
         if (id == R.id.search) {
 
